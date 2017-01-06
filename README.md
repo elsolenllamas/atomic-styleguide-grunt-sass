@@ -7,7 +7,11 @@ The idea of this project is generate a Styleguide following the Atomic Design ma
 - Handlebars (as template engine)
 - Grunt Sass (to compile sass structure into one css file)
 
-to run this WIP project you can use the command 'grunt', this will generate the .css and run the server
+<small>to run this WIP project you need to:</small><br/>
+'npm install' to get the node_modules packages,<br/>
+'bower install' if you want to add Bourbon mixins and Neat.
+
+Then, you can use the command 'grunt', this will generate the .css and run the server
 
 ####Atomic Design Structure
 
