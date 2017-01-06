@@ -1,0 +1,42 @@
+@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+@import "reset";
+@import "variables";
+
+@import "atoms/buttons";
+@import "atoms/forms";
+@import "atoms/typography";
+
+body {
+  @include backface-visibility(visible);
+  font-family: 'Roboto', sans-serif;
+}
+
+.box-layout {
+	padding: $medium-margin;
+}
+
+.box-content {
+	margin-bottom: $medium-margin;
+}
+
+.color-palette {
+	width:25px;
+	height:25px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:$xsmall-margin;
+}
+
+.color-palette-primary {
+	background-color: $primary-color;
+}
+
+.color-palette-secondary {
+	background-color: $secondary-color;
+}
+
+.color-palette-tertiary {
+	background-color: $tertiary-color;
+}
