@@ -4,9 +4,12 @@
 @import "reset";
 @import "variables";
 
+@import "atoms/icons";
+
 @import "atoms/buttons";
 @import "atoms/forms";
 @import "atoms/typography";
+
 
 body {
   @include backface-visibility(visible);
