@@ -1,32 +1,57 @@
 @import "../variables";
 
+@mixin floatingShadow($floating) {
+	box-shadow:0 0 $floating rgba(0,0,0,.14),0 $floating $floating*2 rgba(0,0,0,.28);
+}
 
 .button {
 	border:0px;
-	padding:$small-padding;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ 	margin:$xsmall-padding;
+ 	font-weight:500;
+}
+
+
+.button-floating {
+	@include floatingShadow(4px);
+	border-radius:50%;
+	padding:$small-padding;
+	font-size:$small-font-size;
+	cursor:pointer;
+}
+
+.button-raised {
+	padding:$small-padding $medium-padding;
 	font-size:$normal-font-size;
-	&:hover {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
-    }
+	height:48px;
+	text-transform:uppercase;
 }
 
 .button-primary {
 	@extend .button;
 	background-color: $primary-color;
-	color: $secondary-text-color;
+	color: $secondary-link-color;
+	&:hover {
+		background-color: $primary-color-light;
+	}
 }
 
 .button-secondary {
 	@extend .button;
 	background-color: $secondary-color;
-	color: $secondary-text-color;
+	color: $secondary-link-color;
+	&:hover {
+		background-color: $secondary-color-light;
+	}
 }
 
 .button-tertiary {
 	@extend .button;
 	background-color: $tertiary-color;
-	border:1px solid $secondary-color;
-	color: $primary-text-color;
+	color: $primary-link-color;
+	&:hover {
+		background-color: lighten($primary-link-color, 50%);
+	}
 }
+
