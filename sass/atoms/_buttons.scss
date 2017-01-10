@@ -26,6 +26,11 @@
 	font-size:$normal-font-size;
 	height:48px;
 	text-transform:uppercase;
+	width:100%;
+	
+ 	@media (min-width: $screen-sm-min) {
+		width:auto;
+	}
 }
 
 .button-primary {

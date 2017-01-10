@@ -1,0 +1,33 @@
+.input-form {
+	border: 0;
+    outline: 0;
+    background: transparent;
+	border:1px solid $border-color;
+	height:40px;
+	line-height:40px;
+	padding-left:$small-padding;
+	margin-bottom:$small-margin;
+	font-size:$normal-font-size;
+	&:focus {
+		border:2px solid $secondary-color;
+	}
+}
+
+.input-label {
+	font-size:$xsmall-font-size;
+	color:$tertiary-text-color;
+	display:block;
+	font-weight:300;
+	margin-bottom:$xsmall-margin;
+}
+
+.input-form-large {
+	width:100%;
+	@media (min-width: $screen-sm-min) {
+		width:400px;
+	}
+}
+
+.input-form-small {
+	width:100px;
+}
