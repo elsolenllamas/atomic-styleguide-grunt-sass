@@ -1,6 +1,6 @@
 # Atomic Design Styleguide based on grunt sass
 
-The idea of this project is generate a Styleguide following the Atomic Design manifest.
+The idea of this project is generate a Styleguide following the Atomic Design manifest, with a mobile first approach.
 
 - Node with Express JS
 - Grunt (as task manager)
